@@ -1,0 +1,178 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.logo {
+    height: 40px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px 30px;
+    border-radius: 10px;
+}
+
+.icerik {
+    padding: 60px 40px;
+}
+
+.icerik h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.tarih {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.tarih img {
+    max-width: 400px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.aciklama {
+    flex: 1;
+}
+
+.yorum-alani {
+    background-color: #222;
+    padding: 40px;
+    margin-top: 60px;
+}
+
+.yorum-alani h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.yorum-alani textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    resize: none;
+    font-size: 16px;
+}
+
+.yorum-alani button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: teal;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.yorumlar {
+    margin-top: 30px;
+}
+
+.yorum-karti {
+    background-color: #333;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.harita-container {
+    display: flex;
+    justify-content: flex-end; /* sağa yasla */
+    padding: 20px;
+}
+
+.map-frame {
+    width: 250px;
+    height: 150px;
+    float: right;
+    margin-left: 20px;
+    border: 0;
+}
+.tarih-kart {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+  
+  .tarih-img {
+    max-width: 400px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .aciklama {
+    flex: 1;
+  }
+  
+  .map-frame {
+    width: 300px;
+    height: 200px;
+    margin-top: 10px;
+    border: 0;
+    border-radius: 10px;
+  }
+  .puan-yildiz {
+    font-size: 22px;
+    color: rgb(255, 136, 0);
+    margin: 4px 0;
+}
+.yorum {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #333;
+}

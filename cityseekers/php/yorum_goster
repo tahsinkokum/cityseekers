@@ -1,0 +1,13 @@
+<?php
+$conn = pg_connect("host=localhost dbname=cityseekers user=postgres password=seninsifren");
+
+$result = pg_query($conn, "SELECT * FROM yorumlar ORDER BY tarih DESC");
+
+while ($row = pg_fetch_assoc($result)) {
+    echo "<div style='color:white; margin:10px 0;'>";
+    echo "<strong>" . htmlspecialchars($row['kullanici_adi']) . "</strong>: ";
+    echo htmlspecialchars($row['yorum']);
+    echo " <em>(" . $row['tarih'] . ")</em>";
+    echo "</div>";
+}
+?>
